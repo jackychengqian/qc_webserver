@@ -1,0 +1,3 @@
+/home/vs_project/web_server/build/CMakeFiles/Pine.dir
+/home/vs_project/web_server/build/CMakeFiles/edit_cache.dir
+/home/vs_project/web_server/build/CMakeFiles/rebuild_cache.dir
