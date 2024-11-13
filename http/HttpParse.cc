@@ -249,6 +249,16 @@ void HttpParse::reset() {
     header_.reset(new Header());
 }
 
+void HttpResponse::reset(){
+    responseHead_->responseHeader_ = "";
+    respData_ = "";
+    cookie_ = "";
+}
+void HttpInfo::reset(){
+    if(!isParseFinish())return ;
+    this->response_->reset();
+    this->parse_->reset();
+}
 // 检查解析是否完成
 bool HttpInfo::isParseFinish() {
     return parse_->getHeader()->status_ != PARSE_STATUS::PARSE_BODY_CONTINUE &&

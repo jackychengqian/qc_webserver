@@ -108,7 +108,7 @@ private:
     bool simpleFilter(std::string&);
 };
 
-// 存储和管理 HTTP 请求的全部信息
+// 存储和管理 HTTP 请求
 struct HttpInfo {
     std::unique_ptr<HttpResponse> response_;  // 响应信息
     std::unique_ptr<HttpRequest> request_;    // 请求信息
